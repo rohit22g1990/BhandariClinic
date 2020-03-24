@@ -13,6 +13,9 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
@@ -113,6 +116,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1ZUGjmL4IS4XnEUlKKlii29xkLH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -128,6 +132,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -157,7 +162,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584886397783</updated>
-      <workItem from="1584886414862" duration="12135000" />
+      <workItem from="1584886414862" duration="13219000" />
     </task>
     <servers />
   </component>
@@ -165,10 +170,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="420" y="118" key="FileChooserDialogImpl" timestamp="1584917778627">
+    <state x="420" y="118" key="FileChooserDialogImpl" timestamp="1584994508106">
       <screen x="0" y="0" width="1280" height="728" />
     </state>
-    <state x="420" y="118" key="FileChooserDialogImpl/0.0.1280.728@0.0.1280.728" timestamp="1584917778627" />
+    <state x="420" y="118" key="FileChooserDialogImpl/0.0.1280.728@0.0.1280.728" timestamp="1584994508106" />
+    <state x="141" y="6" key="SettingsEditor" timestamp="1584994704650">
+      <screen x="0" y="0" width="1280" height="728" />
+    </state>
+    <state x="141" y="6" key="SettingsEditor/0.0.1280.728@0.0.1280.728" timestamp="1584994704650" />
     <state x="341" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1584886442580">
       <screen x="0" y="0" width="1280" height="728" />
     </state>
