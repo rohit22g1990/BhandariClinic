@@ -485,7 +485,7 @@ ul {
     min-height: 660px;
     z-index: 1; }
     .blog_banner .banner_inner .overlay {
-      background: url(../img/banner/banner-2.jpg) no-repeat scroll center center;
+      background: url(../images/banner/banner-2.jpg) no-repeat scroll center center;
       opacity: .5;
       height: 125%;
       position: absolute;
@@ -523,7 +523,7 @@ ul {
     overflow: hidden;
     width: 100%;
     min-height: 300px;
-    background: url(../img/banner/banner-2.jpg) no-repeat scroll center center;
+    background: url(../images/banner/banner-2.jpg) no-repeat scroll center center;
     z-index: 1;
     background-size: cover; }
     .banner_area .banner_inner .banner_content h2 {
@@ -3247,7 +3247,8 @@ h6 {
 ============================================================================================ */
 .about-area {
   background: #f7f7f7;
-  background-image: url(../img/background/bg_1.png);
+  background-image: url(../images/background/bg_1.png);
+  /*background-image: url("{{ asset('images/background/bg_1.png') }}");*/
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -3263,7 +3264,7 @@ h6 {
     left: 0;
     width: 50%;
     top: 0;
-    background: url(../img/banner/about1.png);
+    background: url(../images/banner/about1.png);
     backgroundsize: auto;
     z-index: 11;
     height: 100%;

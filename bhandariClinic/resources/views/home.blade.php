@@ -98,24 +98,24 @@
 {{--</header>--}}
 {{--<!--================Header Menu Area =================-->--}}
 
-{{--<!--================Home Banner Area =================-->--}}
+<!--================Home Banner Area =================-->
 
-{{--<section class="banner-area d-flex align-items-center">--}}
-{{--    <div class="container">--}}
-{{--        <div class="row">--}}
-{{--            <div class="col-md-8 col-lg-6 col-xl-5">--}}
-{{--                <h1>Making Health<br>--}}
-{{--                    Care Better Together</h1>--}}
-{{--                <p>Also you dry creeping beast multiply fourth abundantly our itsel signs bring our. Won form living. Whose dry you seasons divide given gathering great in whose you'll greater let livein form beast  sinthete--}}
-{{--                    better together these place absolute right.</p>--}}
-{{--                <a href="" class="main_btn">Make an Appointment</a>--}}
-{{--                <a href="" class="main_btn_light">View Department</a>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</section>--}}
+<section class="banner-area d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-6 col-xl-5">
+                <h1>Making Health<br>
+                    Care Better Together</h1>
+                <p>Also you dry creeping beast multiply fourth abundantly our itsel signs bring our. Won form living. Whose dry you seasons divide given gathering great in whose you'll greater let livein form beast  sinthete
+                    better together these place absolute right.</p>
+                <a href="" class="main_btn">Make an Appointment</a>
+                <a href="" class="main_btn_light">View Department</a>
+            </div>
+        </div>
+    </div>
+</section>
 
-{{--<!--================End Home Banner Area =================-->--}}
+<!--================End Home Banner Area =================-->
 
 
 <!--================ Feature section start =================-->
@@ -219,9 +219,7 @@
                         Appen Land</h4>
                     <h6>Give their their without moving were stars called so divide in female be moving night may fish him</h6>
                     <p>Give their their without moving were stars called so divide female be moving night may fish him own male vreated great Give their their without moving were. Stars called so divide female moving night may fish him own male created great opportunity deal.</p>
-
                     <a class="link_one" href="#">learn more</a>
-
                 </div>
             </div>
         </div>

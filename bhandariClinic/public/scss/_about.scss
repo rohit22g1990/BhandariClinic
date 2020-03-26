@@ -3,7 +3,8 @@
 .about-area{
 	background: $bg_one;
 	//background-image: url(../img/background/bg_1.png);
-    background-image: url("{{ asset('images/background/bg_1.png') }}");
+    //background-image: url("{{ asset('../images/background/bg_1.png') }}");
+    background: url(../images/banner/about1.png);
     background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
