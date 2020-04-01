@@ -8,8 +8,13 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="{{ asset('images/BlueBrainIcon.png') }}" type="image/png">
+    <link rel="icon" href="{{ asset('images/BrainLogoIcon.png') }}" type="image/png">
     {{--<title>Medcare Medical</title>--}}
+
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/jquery-2.2.4.min.js') }}" defer></script>
+    <script src="{{ asset('js/popper.js') }}" defer></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}" defer></script>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/themify-icons.css') }}" rel="stylesheet">
@@ -19,6 +24,8 @@
     <link href="{{ asset('css/animate-css/animate.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
+
+    <link href="{{ asset('css/carousel-review.css') }}" rel="stylesheet">
 </head>
 <body>
 
@@ -163,10 +170,6 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="{{ asset('js/app.js') }}" defer></script>
-<script src="{{ asset('js/jquery-2.2.4.min.js') }}" defer></script>
-<script src="{{ asset('js/popper.js') }}" defer></script>
-<script src="{{ asset('js/bootstrap.min.js') }}" defer></script>
 <script src="{{ asset('js/stellar.js') }}" defer></script>
 <script src="{{ asset('js/owl.carousel.min.js') }}" defer></script>
 <script src="{{ asset('js/jquery.ajaxchimp.min.js') }}" defer></script>

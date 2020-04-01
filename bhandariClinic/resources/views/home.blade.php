@@ -100,10 +100,10 @@
 
 <!--================Home Banner Area =================-->
 
-<section class="banner-area d-flex align-items-center">
+<section class="banner-area d-flex align-items-center contents-module-home-main-banner">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-lg-6 col-xl-5">
+            <div class="col-md-8 col-lg-6 col-xl-5 module-contents">
                 <h1>Making Health<br>
                     Care Better Together</h1>
                 <p>Also you dry creeping beast multiply fourth abundantly our itsel signs bring our. Won form living. Whose dry you seasons divide given gathering great in whose you'll greater let livein form beast  sinthete
@@ -488,91 +488,118 @@
 
 
 <!--================ Start Blog Area =================-->
-<section class="blog-area area-padding">
-    <div class="container">
-        <div class="area-heading row">
-            <div class="col-md-5 col-xl-4">
-                <h3>Get Every<br>
-                    Single Update Here</h3>
+{{--<section class="blog-area area-padding">--}}
+<!-- Section: Testimonials v.2 -->
+<section class="text-center my-5 blog-area area-padding">
+
+    <!-- Section heading -->
+    <h2 class="h1-responsive font-weight-bold my-5">Testimonials v.2</h2>
+
+    <div class="wrapper-carousel-fix">
+        <!-- Carousel Wrapper -->
+        <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade" data-ride="carousel"
+             data-interval="false">
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+                <!--First slide-->
+                <div class="carousel-item active">
+                    <div class="testimonial">
+                        <!--Avatar-->
+                        <div class="avatar mx-auto mb-4">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" class="rounded-circle img-fluid"
+                                 alt="First sample avatar image">
+                        </div>
+                        <!--Content-->
+                        <p>
+                            <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+                            eos
+                            id officiis hic tenetur quae quaerat ad velit ab. Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Dolore cum accusamus eveniet molestias voluptatum inventore laboriosam labore
+                            sit, aspernatur praesentium iste impedit quidem dolor veniam.
+                        </p>
+                        <h4 class="font-weight-bold">Anna Deynah</h4>
+                        <h6 class="font-weight-bold my-3">Founder at ET Company</h6>
+                        <!--Review-->
+                        <i class="fas fa-star blue-text"> </i>
+                        <i class="fas fa-star blue-text"> </i>
+                        <i class="fas fa-star blue-text"> </i>
+                        <i class="fas fa-star blue-text"> </i>
+                        <i class="fas fa-star-half-alt blue-text"> </i>
+                    </div>
+                </div>
+                <!--First slide-->
+                <!--Second slide-->
+                <div class="carousel-item">
+                    <div class="testimonial">
+                        <!--Avatar-->
+                        <div class="avatar mx-auto mb-4">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg" class="rounded-circle img-fluid"
+                                 alt="Second sample avatar image">
+                        </div>
+                        <!--Content-->
+                        <p>
+                            <i class="fas fa-quote-left"></i> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                            odit
+                            aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                            porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+                            non numquam eius modi tempora incidunt ut labore. </p>
+                        <h4 class="font-weight-bold">Maria Kate</h4>
+                        <h6 class="font-weight-bold my-3">Photographer at Studio LA</h6>
+                        <!--Review-->
+                        <i class="fas fa-star blue-text"> </i>
+                        <i class="fas fa-star blue-text"> </i>
+                        <i class="fas fa-star blue-text"> </i>
+                        <i class="fas fa-star blue-text"> </i>
+                        <i class="fas fa-star blue-text"> </i>
+                    </div>
+                </div>
+                <!--Second slide-->
+                <!--Third slide-->
+                <div class="carousel-item">
+                    <div class="testimonial">
+                        <!--Avatar-->
+                        <div class="avatar mx-auto mb-4">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle img-fluid"
+                                 alt="Third sample avatar image">
+                        </div>
+                        <!--Content-->
+                        <p>
+                            <i class="fas fa-quote-left"></i> Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                            culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
+                            error sit voluptatem accusantium doloremque laudantium.</p>
+                        <h4 class="font-weight-bold">John Doe</h4>
+                        <h6 class="font-weight-bold my-3">Front-end Developer in NY</h6>
+                        <!--Review-->
+                        <i class="fas fa-star blue-text"> </i>
+                        <i class="fas fa-star blue-text"> </i>
+                        <i class="fas fa-star blue-text"> </i>
+                        <i class="fas fa-star blue-text"> </i>
+                        <i class="far fa-star blue-text"> </i>
+                    </div>
+                </div>
+                <!--Third slide-->
             </div>
-            <div class="col-md-7 col-xl-8">
-                <p>Land meat winged called subdue without very light in all years sea appear midst forth image him third there set. Land meat winged called subdue without very light in all years sea appear</p>
-            </div>
+            <!--Slides-->
+            <!--Controls-->
+            <a class="carousel-control-prev left carousel-control" href="#carousel-example-1" role="button"
+               data-slide="prev">
+                <span class="icon-prev" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next right carousel-control" href="#carousel-example-1" role="button"
+               data-slide="next">
+                <span class="icon-next" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            <!--Controls-->
         </div>
-
-
-        <div class="row">
-            <div class="col-md-6 col-lg-4 col-md-4">
-                <div class="single-blog">
-                    <div class="thumb">
-                        <img class="img-fluid" src="{{ asset('images/blog/1.jpg') }}" alt="">
-                    </div>
-                    <div class="short_details">
-
-                        <div class="meta-top d-flex">
-                            <a href="#">medical, </a>
-                            <a href="#">dental, </a>
-                            <a href="#">health</a>
-                        </div>
-
-                        <a class="d-block" href="single-blog.html">
-                            <h4>Hath is gathering from hath greate gan
-                                man lights evening man.</h4>
-                        </a>
-                        <div class="meta-bottom d-flex">
-                            <a href="#"><i class="ti-comments"></i>08 comment</a>
-                            <a href="#"><i class="ti-heart"></i> 0 like</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-md-4">
-                <div class="single-blog">
-                    <div class="thumb">
-                        <img class="img-fluid" src="{{ asset('images/blog/2.jpg') }}" alt="">
-                    </div>
-                    <div class="short_details">
-                        <div class="meta-top d-flex">
-                            <a href="#">medical, </a>
-                            <a href="#">dental, </a>
-                            <a href="#">health</a>
-                        </div>
-                        <a class="d-block" href="single-blog.html">
-                            <h4>Also good after there saying don third
-                                you be careful every man</h4>
-                        </a>
-                        <div class="meta-bottom d-flex">
-                            <a href="#"><i class="ti-comments"></i>05 comment</a>
-                            <a href="#"><i class="ti-heart"></i> 0 like</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-md-4">
-                <div class="single-blog">
-                    <div class="thumb">
-                        <img class="img-fluid" src="{{ asset('images/blog/3.jpg') }}" alt="">
-                    </div>
-                    <div class="short_details">
-                        <div class="meta-top d-flex">
-                            <a href="#">medical, </a>
-                            <a href="#">dental, </a>
-                            <a href="#">health</a>
-                        </div>
-                        <a class="d-block" href="single-blog.html">
-                            <h4>Also good after there saying don third
-                                you be careful every man</h4>
-                        </a>
-                        <div class="meta-bottom d-flex">
-                            <a href="#"><i class="ti-comments"></i>05 comment</a>
-                            <a href="#"><i class="ti-heart"></i> 0 like</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Carousel Wrapper -->
     </div>
+
 </section>
+<!-- Section: Testimonials v.2 -->
+{{--</section>--}}
 <!--================ End Blog Area =================-->
 
 <!--================ Start Brands Area =================-->

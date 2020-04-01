@@ -11,13 +11,34 @@ class PagesTableSeeder extends Seeder
      */
     public function run()
     {
+        $currentDate = date('Y-m-d H:i:s');
         DB::table('pages')->insert(
             [
-                ['page_name' => 'home'],
-                ['page_name' => 'about'],
-                ['page_name' => 'department'],
-                ['page_name' => 'doctors'],
-                ['page_name' => 'contact']
+                [
+                    'page_name' => 'home',
+                    'created_at'    =>  $currentDate,
+                    'updated_at'    =>  $currentDate
+                ],
+                [
+                    'page_name' => 'about',
+                    'created_at'    =>  $currentDate,
+                    'updated_at'    =>  $currentDate
+                ],
+                [
+                    'page_name' => 'department',
+                    'created_at'    =>  $currentDate,
+                    'updated_at'    =>  $currentDate
+                ],
+                [
+                    'page_name' => 'doctors',
+                    'created_at'    =>  $currentDate,
+                    'updated_at'    =>  $currentDate
+                ],
+                [
+                    'page_name' => 'contact',
+                    'created_at'    =>  $currentDate,
+                    'updated_at'    =>  $currentDate
+                ]
             ]
         );
     }
