@@ -12,11 +12,10 @@
     {{--<title>Medcare Medical</title>--}}
 
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="{{ asset('js/jquery-2.2.4.min.js') }}" defer></script>
+{{--    <script src="{{ asset('js/jquery-2.2.4.min.js') }}" defer></script>--}}
     <script src="{{ asset('js/popper.js') }}" defer></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}" defer></script>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
+{{--    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">--}}
     <link href="{{ asset('css/themify-icons.css') }}" rel="stylesheet">
     <link href="{{ asset('css/flaticon.css') }}" rel="stylesheet">
     <link href="{{ asset('css/fontawesome/css/all.min.css') }}" rel="stylesheet">
@@ -24,6 +23,14 @@
     <link href="{{ asset('css/animate-css/animate.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
+    <script src="{{ asset('js/bootstrap.min.js') }}" defer></script>
+
+{{--    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">--}}
+    <link href="{{ asset('css/bootstrap320.min.css') }}" rel="stylesheet">
+{{--    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>--}}
+    <script src="{{ asset('js/jquery-1.11.1.min.js') }}" defer></script>
+    <script src="{{ asset('js/bootstrap-3.2.0.min.js') }}" defer></script>
+{{--    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>--}}
 
     <link href="{{ asset('css/carousel-review.css') }}" rel="stylesheet">
 </head>
