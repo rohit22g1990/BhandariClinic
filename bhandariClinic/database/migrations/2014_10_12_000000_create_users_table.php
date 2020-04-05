@@ -18,8 +18,8 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->integer('user_type');
-            $table->integer('is_approved')->default(null);
-            $table->integer('approved_by');
+            $table->integer('is_approved')->default(0);
+            $table->integer('approved_by')->default(0);
             $table->integer('is_active')->default(1);
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');

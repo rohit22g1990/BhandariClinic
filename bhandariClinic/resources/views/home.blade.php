@@ -423,7 +423,8 @@
 
 
 <!-- ================ testimonial section start ================= -->
-<section class="testimonial">
+<section class="appointment-area testimonial">
+
     <div class="container">
         <h3>Gogle Reviews</h3> <hr>
         <div class="testi_slider owl-carousel owl-theme">

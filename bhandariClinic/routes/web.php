@@ -24,3 +24,6 @@ Route::get('/about', function () {
 Route::get('/department', function () {
     return view('department');
 })->name('department');
+Route::get('/admin', 'Admin\IndexController@index')->name('admin-home');
+Route::get('/setting', 'Admin\SettingController@index')->name('setting');
+Route::post('/setting', 'Admin\SettingController@create')->name('createSetting');

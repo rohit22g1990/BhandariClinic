@@ -44,6 +44,9 @@ Table of Content:
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Playfair+Display:400,700");
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+.color-white {
+    color: #f8f9f8 !important;
+}
 .list {
   list-style: none;
   margin: 0px;
@@ -89,10 +92,18 @@ button:focus {
     max-width: 1170px; } }
 
 .area-padding-top {
-  padding-top: 130px; }
+    padding-top: 60px;
+}
+
+.footer-area-custom {
+    background-color: #0f0f0e;
+    color: #797979;
+}
+
 
 .area-padding-bottom {
-  padding-bottom: 130px; }
+    padding-bottom: 130px;
+}
 
 .background_one {
   background: #f7f7f7; }

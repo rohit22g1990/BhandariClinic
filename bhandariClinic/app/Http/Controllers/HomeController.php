@@ -25,7 +25,7 @@ class HomeController extends Controller
     public function index()
     {
         $homeService = new HomeService();
-        $homeService->getGoogleReviews();
+        $homeService->getContactDetails();
         return view('home');
     }
 }
