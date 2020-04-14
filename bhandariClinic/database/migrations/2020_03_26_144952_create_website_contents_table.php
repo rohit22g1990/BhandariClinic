@@ -18,6 +18,8 @@ class CreateWebsiteContentsTable extends Migration
             $table->integer("module_id");
             $table->string("content_title");
             $table->string("contents");
+            $table->string("image");
+            $table->string("is_card_element");
             $table->integer("updated_by");
             $table->timestamps();
         });

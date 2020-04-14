@@ -454,10 +454,9 @@ ul {
 .banner-area {
   min-height: 800px;
   /*background-image: url("../img/banner/home-banner.jpg");*/
-  background-image: url("../images/banner/home-banner.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: right;
+  background-size: 50%;
   position: relative; }
   @media (max-width: 767px) {
     .banner-area {

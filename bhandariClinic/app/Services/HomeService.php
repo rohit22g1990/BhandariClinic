@@ -1,11 +1,14 @@
 <?php
 namespace App\Services;
 
+use App\Model\Admin\Module;
+use App\Services\Admin\AbstractService;
 use Illuminate\Http\Request;
 use GuzzleHttp\Client;
+use Illuminate\Support\Facades\DB;
 
 
-class HomeService
+class HomeService extends AbstractService
 {
     public function getGoogleReviews()
     {
@@ -16,8 +19,10 @@ class HomeService
 //        return $response->getBody()->getContents();
     }
 
-    public function getContactDetails()
+    public function getModuleContentsByPageId(int $id)
     {
+        $modules = Module::all()->where('page_id', '=', $id)->toArray();
 
+        return array_column($modules, null, 'id');
     }
 }

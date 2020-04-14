@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Model\Admin\Page;
 use Illuminate\Http\Request;
 use App\Services\HomeService;
+use App\Http\Controllers\Auth;
+use Illuminate\Support\Facades\Config;
+use App\Pages;
 
 class HomeController extends Controller
 {
@@ -25,7 +29,10 @@ class HomeController extends Controller
     public function index()
     {
         $homeService = new HomeService();
-        $homeService->getContactDetails();
-        return view('home');
+
+        return view('home', [
+            'pageContents' => $homeService->getModuleContentsByPageId(Pages::PAGE_ID_HOME),
+            'moduleCarts' => $homeService->getModuleCarts(Page::HOME_PAGE_ID)
+        ]);
     }
 }

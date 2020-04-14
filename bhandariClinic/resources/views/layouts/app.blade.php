@@ -46,7 +46,9 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <a class="navbar-brand logo_h" href="{{url('/home')}}"><img src="{{ asset('images/logo.png') }}" alt=""></a>
+                <a class="navbar-brand logo_h" href="{{url('/home')}}">
+                    <img src="{{ asset('images/logo.png') }}" alt="">
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -92,10 +94,7 @@
             <div class="col-lg-3 col-sm-6 single-footer-widget">
                 <h4 class="color-white">Stay In Touch</h4>
                 <ul>
-                    <li><a href="#">Managed Website</a></li>
-                    <li><a href="#">Manage Reputation</a></li>
-                    <li><a href="#">Power Tools</a></li>
-                    <li><a href="#">Marketing Service</a></li>
+                    <li><a href="#">{{ $setting['address'] }}</a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-sm-6 single-footer-widget">

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Services\Admin\SettingService;
 use Illuminate\Http\Request;
 
 class SettingController extends Controller
@@ -19,7 +20,6 @@ class SettingController extends Controller
 
     public function index()
     {
-
         return view('Admin/setting');
     }
 
@@ -30,23 +30,13 @@ class SettingController extends Controller
             'contact_person' => 'required',
             'address' => 'required',
             'email' => 'required|email',
-            'phone' => 'required|numeric|max:10',
-            'mobile' => 'required|numeric|max:10',
-            'emergency_contact_number' => 'required|numeric|max:10',
-            'fax' => 'required|numeric|max:10',
-            'logo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'mobile' => 'required|numeric',
+            'emergency_contact_number' => 'required|numeric',
+            'logo' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
+        $settingService = new SettingService();
+        $settingService->save($request);
 
-        if ($request->hasFile('logo')) {
-            $request->logo->move(
-                public_path('images'),
-                'logo' . $request->file('logo')->getClientOriginalExtension()
-            );
-        }
-
-
-        echo "<pre>";dd($request->all()); exit;
-
-
+        return redirect()->route('setting');
     }
 }

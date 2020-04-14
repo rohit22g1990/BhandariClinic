@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateConfigurationTable extends Migration
+class CreateSettingTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateConfigurationTable extends Migration
      */
     public function up()
     {
-        Schema::create('configuration', function (Blueprint $table) {
+        Schema::create('settings', function (Blueprint $table) {
             $table->id();
             $table->string("clinic_name");
             $table->string("contact_person");
@@ -22,8 +22,8 @@ class CreateConfigurationTable extends Migration
             $table->string('phone');
             $table->string('mobile');
             $table->string('emergency_contact_number');
-            $table->string('fax');
-            $table->string('logo');
+            $table->string('fax')->nullable(true)->default(NULL);
+            $table->string('logo')->nullable(true)->default(NULL);
             $table->timestamps();
         });
     }
@@ -35,6 +35,6 @@ class CreateConfigurationTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('configutation');
+        Schema::dropIfExists('settings');
     }
 }

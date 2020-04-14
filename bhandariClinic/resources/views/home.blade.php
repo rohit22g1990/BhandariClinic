@@ -100,14 +100,17 @@
 
 <!--================Home Banner Area =================-->
 
-<section class="banner-area d-flex align-items-center contents-module-home-main-banner">
+<section class="banner-area d-flex align-items-center contents-module-home-main-banner"
+{{--         style="background-image: url('{{ asset('images/Admin/Modules/NewImage.png') }}');">--}}
+{{--         style="background-image: url('public/storage/app/images/Admin/Modules/BrainLogoIcon.png');">--}}
+         style="background-image: url('{{ asset('storage/app/images/' .
+                $pageContents[constant('App\Model\Admin\Module::HOME_PAGE_BANNER_ID')]['image']) }}');">
+{{--style="background-image: url('{{ asset('images/banner/home-banner.jpg') }}');">--}}
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-lg-6 col-xl-5 module-contents">
-                <h1>Making Health<br>
-                    Care Better Together</h1>
-                <p>Also you dry creeping beast multiply fourth abundantly our itsel signs bring our. Won form living. Whose dry you seasons divide given gathering great in whose you'll greater let livein form beast  sinthete
-                    better together these place absolute right.</p>
+                <h1>{{ $pageContents[constant('App\Model\Admin\Module::HOME_PAGE_BANNER_ID')]['title'] }}</h1>
+                <p>{{ $pageContents[constant('App\Model\Admin\Module::HOME_PAGE_BANNER_ID')]['description'] }}</p>
                 <a href="" class="main_btn">Make an Appointment</a>
                 <a href="" class="main_btn_light">View Department</a>
             </div>
@@ -122,86 +125,56 @@
 <section class="feature-section">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <div class="card card-feature text-center text-lg-left">
-
-                    <h3 class="card-feature__title"><span class="card-feature__icon">
-                                <i class="ti-layers"></i>
-                            </span>Primary Care</h3>
-                    <p class="card-feature__subtitle">An so vulgar to on points wanted rapture ous resolving continued household </p>
+            @foreach($moduleCarts[constant('App\Model\Admin\Module::FEATURE_CART_ID')] as $cart)
+                <div class="col-md-4">
+                    <div class="card card-feature text-center text-lg-left">
+                        <h3 class="card-feature__title"><span class="card-feature__icon">
+                                {!! $cart->icon !!}
+                            </span>{{ $cart->title }}</h3>
+                        <p class="card-feature__subtitle" {{ strlen($cart->description) > 75 ? 'title=" . $cart->description . "' : "" }}>
+                            {{ substr(strip_tags($cart->description), 0, 75) }}
+                            {{ strlen($cart->description) > 75 ? '...' : '' }}
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card card-feature text-center text-lg-left">
-
-                    <h3 class="card-feature__title"><span class="card-feature__icon">
-                                <i class="ti-heart-broken"></i>
-                            </span>Emergency Cases</h3>
-                    <p class="card-feature__subtitle">An so vulgar to on points wanted rapture ous resolving continued household </p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card card-feature text-center text-lg-left">
-
-                    <h3 class="card-feature__title"><span class="card-feature__icon">
-                                <i class="ti-headphone-alt"></i>
-                            </span>Online Appointment</h3>
-                    <p class="card-feature__subtitle">An so vulgar to on points wanted rapture ous resolving continued household </p>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>
 <!--================ Feature section end =================-->
 
 <!--================ Service section start =================-->
-
 <div class="service-area area-padding-top">
     <div class="container">
         <div class="area-heading row">
             <div class="col-md-5 col-xl-4">
-                <h3>Awesome<br>
-                    Health Service</h3>
+                <h3>
+                    {{ $pageContents[constant('App\Model\Admin\Module::AWESOME_SERVICE_ID')]['title'] }}
+                </h3>
             </div>
             <div class="col-md-7 col-xl-8">
-                <p>Land meat winged called subdue without very light in all years sea appear midst forth image him third there set. Land meat winged called subdue without very light in all years sea appear</p>
+                <p>
+                    {{ $pageContents[constant('App\Model\Admin\Module::AWESOME_SERVICE_ID')]['description'] }}
+                </p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-lg-4">
-                <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
-                        <span class="card-service__icon">
-                            <i class="flaticon-brain"></i>
-                        </span>
-                    <h3 class="card-service__title">Neurology Service</h3>
-                    <p class="card-service__subtitle">Land meat winged called subdue without a very light in all years sea appear Lesser bring fly first land set female best perform.</p>
-                    <a class="card-service__link" href="#">Learn More</a>
+            @foreach($moduleCarts[constant('App\Model\Admin\Module::AWESOME_SERVICE_ID')] as $cart)
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
+                        <div class="text-center">
+                            <div class="card-service__icon">
+                                {!! $cart->icon !!}
+                            </div>
+                        </div>
+                        <h3 class="card-service__title text-center">{{ $cart->title }}</h3>
+                        <p class="card-service__subtitle">
+                            {{ $cart->description }}
+                        </p>
+                        <a class="card-service__link" href="#">Learn More</a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
-                        <span class="card-service__icon">
-                            <i class="flaticon-tooth"></i>
-                        </span>
-                    <h3 class="card-service__title">Dental Clinic</h3>
-                    <p class="card-service__subtitle">Land meat winged called subdue without a very light in all years sea appear Lesser bring fly first land set female best perform</p>
-                    <a class="card-service__link" href="#">Learn More</a>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
-                        <span class="card-service__icon">
-                            <i class="flaticon-face"></i>
-                        </span>
-                    <h3 class="card-service__title">Plastic Surgery</h3>
-                    <p class="card-service__subtitle">Land meat winged called subdue without a very light in all years sea appear Lesser bring fly first land set female best perform</p>
-                    <a class="card-service__link" href="#">Learn More</a>
-                </div>
-            </div>
-
-
+            @endforeach
         </div>
     </div>
 </div>
@@ -478,7 +451,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h2>Emergency hotline</h2>
-                <span>(+01) – 256 567 550</span>
+                <span>{{ $setting['emergency_contact_number']  }}</span>
                 <p class="pt-3">We provide 24/7 customer support. Please feel free to contact us <br>for emergency case.</p>
             </div>
         </div>

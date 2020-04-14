@@ -1,17 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1781f1ba-b1c3-4bae-abd3-6548ec1701bc" name="Default Changelist" comment="" />
+    <list default="true" id="1781f1ba-b1c3-4bae-abd3-6548ec1701bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ModuleCartController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ModuleController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Model/AbstractModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Model/Admin/Module.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Model/Admin/ModuleCart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Model/Admin/Page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Providers/SettingServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Admin/AbstractService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Admin/ModuleCartService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Admin/ModuleService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Admin/SettingService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/constants.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_12_172102_create_module_carts_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/custom-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Admin/Modules/NileshBhandari.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Admin/Modules/logo-copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/ModuleCarts/form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/ModuleCarts/list.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/ModuleCarts/module.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/Modules/form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/Modules/list.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/Modules/module.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/flash-message.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SettingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SettingController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/Setting.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Setting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Pages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/HomeService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/HomeService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_26_144952_create_website_contents_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_26_144952_create_website_contents_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_27_073238_create_modules_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_27_073238_create_modules_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_05_135931_create_configuration_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_05_135931_create_setting_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/setting.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/setting.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/.gitignore" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -116,16 +166,20 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1ZUGjmL4IS4XnEUlKKlii29xkLH" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Services/Admin" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -136,14 +190,16 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Bhandari Speciality\bhandariClinic\app\Http\Controllers\Admin" />
       <recent name="G:\Bhandari Speciality\bhandariClinic\public" />
+      <recent name="G:\Bhandari Speciality\bhandariClinic\resources\views\Admin\Modules" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\Bhandari Speciality\bhandariClinic\public" />
-      <recent name="G:\Bhandari Speciality\bhandariClinic\public\css\scss" />
-      <recent name="G:\Bhandari Speciality\bhandariClinic\public\images" />
-      <recent name="G:\Bhandari Speciality\bhandariClinic\public\js" />
-      <recent name="G:\Bhandari Speciality\bhandariClinic\public\css" />
+      <recent name="G:\Bhandari Speciality\bhandariClinic\app\Services\Admin" />
+      <recent name="G:\Bhandari Speciality\bhandariClinic\resources\views\Admin" />
+      <recent name="G:\Bhandari Speciality\bhandariClinic\public\storage\app\images\Admin\Modules" />
+      <recent name="G:\Bhandari Speciality\bhandariClinic\storage" />
+      <recent name="G:\Bhandari Speciality\bhandariClinic\resources\views\Admin\Modules" />
     </key>
   </component>
   <component name="RunManager">
@@ -163,36 +219,61 @@
       <option name="presentableId" value="Default" />
       <updated>1584886397783</updated>
       <workItem from="1584886414862" duration="13219000" />
+      <workItem from="1586166794085" duration="60268000" />
+      <workItem from="1586685561480" duration="45133000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="389" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586541004752">
+      <screen x="0" y="0" width="1280" height="728" />
+    </state>
+    <state x="389" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.728@0.0.1280.728" timestamp="1586541004752" />
+    <state x="370" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1586725174751">
+      <screen x="0" y="0" width="1280" height="728" />
+    </state>
+    <state x="370" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.728@0.0.1280.728" timestamp="1586725174751" />
     <state x="420" y="118" key="FileChooserDialogImpl" timestamp="1584994508106">
       <screen x="0" y="0" width="1280" height="728" />
     </state>
     <state x="420" y="118" key="FileChooserDialogImpl/0.0.1280.728@0.0.1280.728" timestamp="1584994508106" />
+    <state x="475" y="287" key="NewPhpFileDialog" timestamp="1586553057282">
+      <screen x="0" y="0" width="1280" height="728" />
+    </state>
+    <state x="475" y="287" key="NewPhpFileDialog/0.0.1280.728@0.0.1280.728" timestamp="1586553057282" />
     <state x="141" y="6" key="SettingsEditor" timestamp="1584994704650">
       <screen x="0" y="0" width="1280" height="728" />
     </state>
     <state x="141" y="6" key="SettingsEditor/0.0.1280.728@0.0.1280.728" timestamp="1584994704650" />
-    <state x="341" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1584886442580">
+    <state width="512" height="446" key="SwitcherDM" timestamp="1586797093277">
       <screen x="0" y="0" width="1280" height="728" />
     </state>
-    <state x="341" y="187" key="com.intellij.ide.util.TipDialog/0.0.1280.728@0.0.1280.728" timestamp="1584886442580" />
+    <state width="512" height="446" key="SwitcherDM/0.0.1280.728@0.0.1280.728" timestamp="1586797093277" />
+    <state x="341" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1586685573302">
+      <screen x="0" y="0" width="1280" height="728" />
+    </state>
+    <state x="341" y="187" key="com.intellij.ide.util.TipDialog/0.0.1280.728@0.0.1280.728" timestamp="1586685573302" />
     <state x="275" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584920077614">
       <screen x="0" y="0" width="1280" height="728" />
     </state>
     <state x="275" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.728@0.0.1280.728" timestamp="1584920077614" />
-    <state x="337" y="0" width="606" height="728" key="find.popup" timestamp="1584992215254">
+    <state x="337" y="0" width="607" height="728" key="find.popup" timestamp="1586800305897">
       <screen x="0" y="0" width="1280" height="728" />
     </state>
-    <state x="337" y="0" width="606" height="728" key="find.popup/0.0.1280.728@0.0.1280.728" timestamp="1584992215254" />
-    <state x="303" y="49" key="search.everywhere.popup" timestamp="1584991191961">
+    <state x="337" y="0" width="607" height="728" key="find.popup/0.0.1280.728@0.0.1280.728" timestamp="1586800305897" />
+    <state x="296" y="162" key="run.anything.popup" timestamp="1586694624439">
       <screen x="0" y="0" width="1280" height="728" />
     </state>
-    <state x="303" y="49" key="search.everywhere.popup/0.0.1280.728@0.0.1280.728" timestamp="1584991191961" />
+    <state x="296" y="162" key="run.anything.popup/0.0.1280.728@0.0.1280.728" timestamp="1586694624439" />
+    <state x="303" y="49" width="672" height="676" key="search.everywhere.popup" timestamp="1586796733566">
+      <screen x="0" y="0" width="1280" height="728" />
+    </state>
+    <state x="303" y="49" width="672" height="676" key="search.everywhere.popup/0.0.1280.728@0.0.1280.728" timestamp="1586796733566" />
   </component>
 </project>

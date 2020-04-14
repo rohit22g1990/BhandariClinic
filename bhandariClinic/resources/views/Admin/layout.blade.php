@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('AdminAssets/img/favicon.ico') }}">
-    <title>Preclinic - Medical & Hospital - Bootstrap 4 Admin Template</title>
+    <title>{{ $setting['clinic_name'] }}</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
 
+    <link href="{{ asset('css/themify-icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/flaticon.css') }}" rel="stylesheet">
+    <link href="{{ asset('AdminAssets/css/select2.min.css') }}" rel="stylesheet">
     <link href="{{ asset('AdminAssets/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('AdminAssets/css/font-awesome.min.css') }}" rel="stylesheet">
     <link href="{{ asset('AdminAssets/css/style.css') }}" rel="stylesheet">
-    <link href="{{ asset('AdminAssets/css/select2.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('AdminAssets/css/custom-style.css') }}" rel="stylesheet">
 
 {{--    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">--}}
 {{--    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">--}}
@@ -142,7 +143,7 @@
             <div id="sidebar-menu" class="sidebar-menu">
                 <ul>
                     <li class="menu-title">Main</li>
-                    <li class="active">
+                    <li class="{{ (Config::get('constants.admin.routes.dashboard') === Route::currentRouteName()) ? 'active' : '' }}">
                         <a href="index-2.html"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
                     </li>
                     <li>
@@ -259,6 +260,12 @@
                         <a href="calendar.html"><i class="fa fa-calendar"></i> <span>Calendar</span></a>
                     </li>
                     <li class="menu-title">Extras</li>
+                    <li class="{{ (Config::get('constants.admin.routes.modules') === Route::currentRouteName()) ? 'active' : '' }}">
+                        <a href="{{ route(Config::get('constants.admin.routes.modules')) }}"><i class="fa fa-calendar"></i> <span>Modules</span></a>
+                    </li>
+                    <li class="{{ (Config::get('constants.admin.routes.moduleCart') === Route::currentRouteName()) ? 'active' : '' }}">
+                        <a href="{{ route(Config::get('constants.admin.routes.moduleCart')) }}"><i class="fa fa-calendar"></i> <span>Module Carts</span></a>
+                    </li>
                     <li class="submenu">
                         <a href="#"><i class="fa fa-columns"></i> <span>Pages</span> <span class="menu-arrow"></span></a>
                         <ul style="display: none;">
