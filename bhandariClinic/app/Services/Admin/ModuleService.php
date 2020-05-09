@@ -20,7 +20,8 @@ class ModuleService extends AbstractService
         $module = $this->getInstance($request, new MOdule());
         if ($request->hasFile('image')) {
             $imagePath = '/Admin/Modules';
-            $imageName = $request->file('image')->getClientOriginalName();
+            // $imageName = $request->file('image')->getClientOriginalName();
+            $imageName = 'homePageBannerImage.jpg';
 //            $request->image->storeAs('images/' . $imagePath, $imageName);
 
             $request->image->move(public_path('images') . $imagePath, $imageName);

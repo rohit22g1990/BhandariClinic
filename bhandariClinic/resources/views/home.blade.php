@@ -100,12 +100,11 @@
 
 <!--================Home Banner Area =================-->
 
-<section class="banner-area d-flex align-items-center contents-module-home-main-banner"
-{{--         style="background-image: url('{{ asset('images/Admin/Modules/NewImage.png') }}');">--}}
-{{--         style="background-image: url('public/storage/app/images/Admin/Modules/BrainLogoIcon.png');">--}}
-         style="background-image: url('{{ asset('storage/app/images/' .
-                $pageContents[constant('App\Model\Admin\Module::HOME_PAGE_BANNER_ID')]['image']) }}');">
-{{--style="background-image: url('{{ asset('images/banner/home-banner.jpg') }}');">--}}
+<section class="banner-area d-flex align-items-center        
+                contents-module-home-main-banner"
+                style="background-image: url('{{ asset('images/Admin/Modules/homePageBannerImage.jpg') }}');
+                    margin-top: auto !important;
+                    min-height: 650px !important;">
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-lg-6 col-xl-5 module-contents">
